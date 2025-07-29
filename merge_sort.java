@@ -13,7 +13,6 @@ public class merge_sort {
         System.out.println("Enter the elements of the array: ");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
-            sc.nextLine();
         }
         mergesort(arr, 0, n-1);
         System.out.println("Sorted array: " + Arrays.toString(arr));
