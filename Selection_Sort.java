@@ -14,12 +14,12 @@ public class Selection_Sort {
                 arr[i] = sc.nextInt();
                     sc.nextLine();
             }
-        SelectionSort(arr, n);
+        selectionSort(arr, n);
             System.out.println("Sorted array: " + Arrays.toString(arr));
 
         sc.close();
     }
-    public static void SelectionSort(int[] arr, int n) {
+    public static void selectionSort(int[] arr, int n) {
         for (int i = 0; i < n-1; i++) {
             int mini = i; // Considering 1st element is the smallest
             for (int j = i; j <= n-1; j++) {

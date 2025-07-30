@@ -14,12 +14,12 @@ public class Bubble_Sort {
             arr[i] = sc.nextInt();
                 sc.nextLine();
         }
-        BubbleSort(arr, n);
+        bubbleSort(arr, n);
         System.out.println("Sorted array: " + Arrays.toString(arr));
 
         sc.close();
     }
-    public static void BubbleSort(int[] arr, int n) {
+    public static void bubbleSort(int[] arr, int n) {
         for (int i = n-1; i > 0; i--) {
             int didSwap = 0;
             for (int j = 0; j < i; j++) {

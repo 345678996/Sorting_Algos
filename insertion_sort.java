@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class insertion_sort {
+public class Insertion_sort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the array: ");
@@ -13,12 +13,12 @@ public class insertion_sort {
             arr[i] = sc.nextInt();
                 sc.nextLine();
         }
-        InsertionSort(arr, n);
+        insertionSort(arr, n);
         System.out.println("Sorted array: " + Arrays.toString(arr));
 
         sc.close();
     }
-    public static void InsertionSort(int[] arr, int n) {
+    public static void insertionSort(int[] arr, int n) {
         for (int i = 1; i < n; i++) {
             int j = i;
                 while (j > 0 && arr[j-1] > arr[j]) {
@@ -28,7 +28,6 @@ public class insertion_sort {
 
                     j--;
                 }
-
         }
     }
 }
